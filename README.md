@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Drillhole Data Quality Checker
 
 A lightweight, rule-based QC tool for validating geoscience drillhole data (collars and downhole intervals) before loading into a centralised drilling database.
@@ -113,3 +114,7 @@ Both follow the same rule code convention (`R-C##` for collar rules, `R-I##` for
 
 - Python 3.9 (standard library only)
 - Microsoft SQL Server / T-SQL (compatible with SQL Server 2016+)
+=======
+# drillhole-qc
+Python and T-SQL drillhole data quality checker for validating collar and interval data before database load
+>>>>>>> 06ed243613175a6d6cbf60afaac846a67eaba8f1
