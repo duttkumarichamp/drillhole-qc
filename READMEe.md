@@ -1,10 +1,18 @@
 <<<<<<< HEAD
 # Drillhole Data Quality Checker
 
-A lightweight, rule-based QC tool for validating geoscience drillhole data (collars and downhole intervals) before loading into a centralised drilling database.
+A lightweight, rule-based QC tool for validating geoscience drillhole data (collars and intervals) before loading into a centralised drilling database.
 
-Implements the same validation rules in both **Python** (for file-based / pre-load validation) and **T-SQL** (for server-side validation within a SQL Server database), so checks can be run at multiple points in the data lifecycle.
+Built using Python and T-SQL to demonstrate how data quality checks can be applied consistently across both pre-load validation and database-level validation.
 
+## Key Features
+
+- Validates collar and interval data against 11 QC rules
+- Detects duplicate HoleIDs, missing fields, invalid dates, and non-positive depths
+- Identifies overlapping intervals and unmatched HoleIDs
+- Flags out-of-range assay values (Fe, Al2O3, SiO2)
+- Generates structured QC reports for downstream workflows
+- Implements the same validation logic in both Python and SQL Server
 ---
 
 ## Why this exists
