@@ -1,0 +1,12 @@
+Severity,Table,Row,HoleID,Rule,Detail
+ERROR,collars,5,WAIO_004,R-C01: Missing required field,Column 'Easting' is empty or absent
+ERROR,collars,6,WAIO_005,R-C04: MaxDepth non-positive,MaxDepth = -50.0
+ERROR,collars,7,WAIO_002,R-C02: Duplicate HoleID,First seen at row 3
+ERROR,collars,9,WAIO_007,R-C04: MaxDepth non-positive,MaxDepth = 0.0
+ERROR,collars,10,WAIO_008,R-C05: Invalid DrillDate,'99-03-20' is not a valid %Y-%m-%d date
+ERROR,collars,12,WAIO_010,R-C06: Unrecognised DrillType,"'ROTARY' not in ['AC', 'DD', 'RAB', 'RC']"
+ERROR,intervals,4,WAIO_001,R-I03: From >= To,"From=45.0, To=45.0 — interval has no length"
+ERROR,intervals,14,WAIO_999,R-I01: HoleID not in collars,'WAIO_999' has no matching collar record
+ERROR,intervals,16,WAIO_006,R-I03: From >= To,"From=35.0, To=35.0 — interval has no length"
+ERROR,intervals,17,WAIO_006,R-I04: Fe out of range,"Fe=-1.5 outside [0.0, 100.0]"
+ERROR,intervals,6,WAIO_001,R-I05: Overlapping intervals,"Interval [80.0, 110.0] (row 5) overlaps [105.0, 130.0] (row 6)"
